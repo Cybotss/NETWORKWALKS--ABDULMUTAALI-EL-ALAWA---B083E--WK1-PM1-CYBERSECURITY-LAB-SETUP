@@ -20,43 +20,41 @@ Cybersecurity Lab setup
   <img src="https://img.shields.io/badge/Kali%20Linux-404040?style=flat-square&labelColor=C00000&logo=kalilinux&logoColor=white" />
   <img src="https://img.shields.io/badge/NetworkWalks-404040?style=flat-square&labelColor=C00000" />
   <img src="https://img.shields.io/badge/Ethical%20Hacking-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Abdulmutaali%20El-Alawa%20CCIE-C00000?style=flat-square" />
+  <img src="https://img.shields.io/badge/Abdulmutaali%20ElAlawa%20CCIE-C00000?style=flat-square" />
 </p>
 
 ---
 
 ## 📌 Project Overview
 
-This project focuses on setting up a **virtual cybersecurity and penetration-testing laboratory** using VirtualBox and Kali Linux.
+This project showcases the implementation of a dedicated, isolated **Cybersecurity and Penetration Testing Virtual Environment** built using Oracle VM VirtualBox and Kali Linux. 
 
-The purpose of the lab is to create a controlled environment where cybersecurity tools, network scanning, reconnaissance, vulnerability assessment, and other security-testing activities can be performed safely and repeatedly.
+The primary objective is to engineer a secure sandbox framework designed to execute advanced cybersecurity workflows such as active network reconnaissance, vulnerability assessments, custom packet analysis, and system exploitation without putting external networks or production systems at risk. 
 
-The lab is configured on a private virtual network so that additional machines can be added later and used as targets for authorized security testing.
+By structuring the environment over a custom private **NAT Network Subnet (10.0.0.0/24)**, this architecture establishes a highly scalable baseline. It provides outbound internet traffic for package updates while allowing seamless, isolated horizontal scaling for target virtual machines in future testing phases.
 
 ---
 
 
 ## 🎯 Objectives
 
-The main objectives of this project are to:
+The structural objectives of this engineering phase are to:
 
-- Install and configure VirtualBox.
-- Install/import Kali Linux as a virtual machine.
-- Create a private **NAT Network** for the cybersecurity lab.
-- Configure network connectivity for Kali Linux.
-- Assign a consistent IP address to the Kali VM.
-- Verify network connectivity and DNS resolution.
-- Take a clean VM snapshot for recovery.
-- Document the complete setup process.
-- Prepare the environment for future cybersecurity projects.
+- **Hypervisor Implementation:** Deploy and harden Oracle VM VirtualBox as the foundational virtualization plane.
+- **Attacker OS Integration:** Provision and optimize a Kali Linux virtual machine instance to serve as the core security distribution layer.
+- **Network Segmentation:** Architect a segregated, custom private **NAT Network** using a `10.0.0.0/24` CIDR block to encapsulate lab communications.
+- **Static Asset Allocation:** Apply persistent networking configurations to bind the Kali instance to a fixed IP endpoint (`10.0.0.2/24`).
+- **Telemetry Verification:** Execute routing audits and DNS checks to confirm deterministic internet egress and host accessibility.
+- **State Serialization:** Establish a clean, immutable configuration baseline by capturing a post-deployment VM snapshot for instant disaster recovery.
+- **Documentation Engineering:** Maintain full technical transparency by structuring a repeatable deployment runtime manual.
 
 ---
 
 ## 🛡️ Purpose of the Lab
 
-The lab provides an isolated and controlled environment for cybersecurity learning and authorized security testing.
+This laboratory operates as a fully sandboxed, highly controlled testing framework engineered to simulate offensive and defensive cybersecurity strategies safely. 
 
-It can be used for activities such as:
+It is intentionally designed to facilitate the execution of critical security operational workflows, including:
 
 - Network reconnaissance
 - Port scanning
@@ -66,7 +64,7 @@ It can be used for activities such as:
 - Exploitation practice
 - Security-tool experimentation
 
-⚠️ **Important:** This laboratory must only be used for systems that you own or have explicit permission to test. Do not use the lab or its tools to attack unauthorized systems.
+⚠️ **Compliance Warning:** This environment is built strictly for educational research, threat modeling, and defensive testing. All operations must strictly target network objects that you own or have explicit, legally binding written authorization to evaluate. Penetration testing without prior authorization on production channels is illegal.
 
 ---
 

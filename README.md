@@ -70,7 +70,7 @@ It is intentionally designed to facilitate the execution of critical security op
 
 ## 🏗️ Lab Architecture
 
-![](1-screenshot-title-image.png)
+![](Type 1 HV.png)
 
 
 Additional target machines can be added to the same virtual network in future projects.
@@ -81,9 +81,9 @@ Additional target machines can be added to the same virtual network in future pr
 
 | 🧩 Component       | ⚙️ Configuration   |
 | ------------------ | ------------------  |
-| 🖥️ Host OS         | Windows 10         |
+| 🖥️ Host OS         | Windows 11         |
 | 🧠 Host RAM        | 8 GB               |
-| ⚡ Processor       | Intel Core i7      |
+| ⚡ Processor       | Intel Core i5      |
 | 🧰 Hypervisor      | VirtualBox 7.2  |
 | 🐉 Security OS     | Kali Linux 2026.2  |
 | 🧠 Kali RAM        | 2048 MB            |
